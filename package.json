@@ -7,8 +7,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore .",
-    "lint:fix": "eslint --ext .ts,.vue --ignore-path .gitignore . --fix"
+    "lint": "eslint --ext .ts,.vue,.scss --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .ts,.vue,.scss --ignore-path .gitignore . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -17,6 +18,8 @@
     "eslint": "^8.49.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
     "nuxt": "^3.7.1",
     "typescript": "^5.2.2",
     "vite-plugin-eslint": "^1.8.1"
