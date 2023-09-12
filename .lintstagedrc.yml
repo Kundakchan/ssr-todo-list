@@ -1,0 +1,2 @@
+"*.{ts,vue,scss,css}":
+  - npm run lint:fix
