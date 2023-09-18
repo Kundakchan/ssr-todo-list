@@ -55,7 +55,7 @@ section {
   font-size: 24px;
   color: gray;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 }
 .popular-category {
@@ -71,7 +71,7 @@ section {
   color: gray;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .new-product {
   display: grid;
