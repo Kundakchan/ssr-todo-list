@@ -9,7 +9,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="kt-card-layout">
+  <article class="kt-card-layout">
     <div class="kt-card-header">
       <h4>{{ props.title }}</h4>
     </div>
@@ -24,7 +24,7 @@ const props = defineProps<{
         Add to cart
       </button>
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped>
@@ -65,5 +65,6 @@ const props = defineProps<{
   }
   .kt-card-add {
     grid-area: add;
+    padding: 8px 16px;
   }
 </style>

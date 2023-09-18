@@ -5,7 +5,7 @@ const menu = ref([
     label: 'Home'
   },
   {
-    key: 'product',
+    key: 'products',
     label: 'Product'
   },
   {
@@ -13,8 +13,8 @@ const menu = ref([
     label: 'About'
   },
   {
-    key: 'servises',
-    label: 'Servises'
+    key: 'cart',
+    label: 'Cart'
   }
 ])
 </script>
@@ -24,7 +24,12 @@ const menu = ref([
       v-for="item in menu"
       :key="item.key"
     >
-      {{ item.label }}
+      <NuxtLink
+        class="link"
+        :to="{ name: item.key }"
+      >
+        {{ item.label }}
+      </NuxtLink>
     </li>
   </ul>
 </template>
@@ -39,12 +44,15 @@ ul {
 }
 li {
   padding: 12px 0;
-  font-size: 24px;
-  color: gray;
   border-top: 2px solid transparent;
-  cursor: pointer;
+  transition: border-top-color .5s ease;
 }
 li:hover {
-  border-top-color: blue;
+  border-top-color: gray;
+}
+.link {
+  color: gray;
+  font-size: 24px;
+  text-decoration: none;
 }
 </style>
