@@ -14,3 +14,4 @@ extends:
   - "plugin:vue/vue3-recommended"
 plugins:
   - "@typescript-eslint"
+  - vitest
